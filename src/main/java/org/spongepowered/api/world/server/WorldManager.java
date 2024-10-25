@@ -55,15 +55,14 @@ public interface WorldManager {
     Optional<ServerWorld> world(ResourceKey key);
 
     /**
-     * Gets a {@link Path directory} that exists for the provided {@link ResourceKey world key}.
+     * Gets a {@link Path directory} that is used for the world's data
+     * identified by {@link ResourceKey world key}. It is not guaranteed
+     * the path will exist until the world is formally loaded by the game.
      *
-     * <p>It is not required for the implementation to validate that the directory contains a proper world,
-     * only that the directory exists.</p>
-     *
-     * @param key The key
-     * @return The directory or {@link Optional#empty()} if not found
+     * @param key The world's identifier key
+     * @return The directory to be used if it doesn't exist
      */
-    Optional<Path> worldDirectory(ResourceKey key);
+    Path worldDirectory(ResourceKey key);
 
     /**
      * Gets all currently loaded {@link ServerWorld worlds}.
