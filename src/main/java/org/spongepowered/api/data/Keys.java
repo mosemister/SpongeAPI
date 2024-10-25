@@ -220,6 +220,7 @@ import org.spongepowered.api.item.enchantment.Enchantment;
 import org.spongepowered.api.item.enchantment.EnchantmentTypes;
 import org.spongepowered.api.item.inventory.Inventory;
 import org.spongepowered.api.item.inventory.ItemStack;
+import org.spongepowered.api.item.inventory.ItemStackLike;
 import org.spongepowered.api.item.inventory.ItemStackSnapshot;
 import org.spongepowered.api.item.inventory.Slot;
 import org.spongepowered.api.item.inventory.equipment.EquipmentType;
@@ -228,6 +229,7 @@ import org.spongepowered.api.item.inventory.type.GridInventory;
 import org.spongepowered.api.item.merchant.Merchant;
 import org.spongepowered.api.item.merchant.TradeOffer;
 import org.spongepowered.api.item.potion.PotionType;
+import org.spongepowered.api.item.recipe.smithing.ArmorTrim;
 import org.spongepowered.api.map.MapCanvas;
 import org.spongepowered.api.map.MapInfo;
 import org.spongepowered.api.map.decoration.MapDecoration;
@@ -402,6 +404,11 @@ public final class Keys {
      * Readonly
      */
     public static final Key<Value<ArmorMaterial>> ARMOR_MATERIAL = Keys.key(ResourceKey.sponge("armor_material"), ArmorMaterial.class);
+
+    /**
+     * The {@link ArmorTrim} of an armor {@link ItemStackLike ItemStack}. Can be modified.
+     */
+    public static final Key<Value<ArmorTrim>> ARMOR_TRIM = Keys.key(ResourceKey.sponge("armor_trim"), ArmorTrim.class);
 
     /**
      * The type of {@link ArtType} shown by {@link Painting}s.
