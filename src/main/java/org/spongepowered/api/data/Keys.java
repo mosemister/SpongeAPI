@@ -34,6 +34,7 @@ import org.spongepowered.api.block.BlockTypes;
 import org.spongepowered.api.block.entity.Banner;
 import org.spongepowered.api.block.entity.BlockEntity;
 import org.spongepowered.api.block.entity.CommandBlock;
+import org.spongepowered.api.block.entity.DecoratedPot;
 import org.spongepowered.api.block.entity.EndGateway;
 import org.spongepowered.api.block.entity.Jukebox;
 import org.spongepowered.api.block.entity.Lectern;
@@ -2604,6 +2605,34 @@ public final class Keys {
      * For slabs use {@link #SLAB_PORTION} instead
      */
     public static final Key<Value<PortionType>> PORTION_TYPE = Keys.key(ResourceKey.sponge("portion_type"), PortionType.class);
+
+    /**
+     * The {@link ItemType decoration} for a {@link DecoratedPot}.
+     *
+     * @see <a href="https://minecraft.wiki/w/Pottery_Sherd">Pottery Sherd</a>
+     */
+    public static final Key<Value<ItemType>> POT_FRONT_DECORATION = Keys.key(ResourceKey.sponge("pot_front_decoration"), ItemType.class);
+
+    /**
+     * The {@link ItemType decoration} for a {@link DecoratedPot}.
+     *
+     * @see <a href="https://minecraft.wiki/w/Pottery_Sherd">Pottery Sherd</a>
+     */
+    public static final Key<Value<ItemType>> POT_LEFT_DECORATION = Keys.key(ResourceKey.sponge("pot_left_decoration"), ItemType.class);
+
+    /**
+     * The {@link ItemType decoration} for a {@link DecoratedPot}.
+     *
+     * @see <a href="https://minecraft.wiki/w/Pottery_Sherd">Pottery Sherd</a>
+     */
+    public static final Key<Value<ItemType>> POT_RIGHT_DECORATION = Keys.key(ResourceKey.sponge("pot_right_decoration"), ItemType.class);
+
+    /**
+     * The {@link ItemType decoration} for a {@link DecoratedPot}.
+     *
+     * @see <a href="https://minecraft.wiki/w/Pottery_Sherd">Pottery Sherd</a>
+     */
+    public static final Key<Value<ItemType>> POT_BACK_DECORATION = Keys.key(ResourceKey.sponge("pot_back_decoration"), ItemType.class);
 
     /**
      * The potential max speed of a {@link Minecart}.
