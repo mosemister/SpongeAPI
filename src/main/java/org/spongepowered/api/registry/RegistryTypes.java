@@ -133,6 +133,8 @@ import org.spongepowered.api.item.inventory.query.QueryType;
 import org.spongepowered.api.item.potion.PotionType;
 import org.spongepowered.api.item.recipe.Recipe;
 import org.spongepowered.api.item.recipe.RecipeType;
+import org.spongepowered.api.item.recipe.smithing.TrimMaterial;
+import org.spongepowered.api.item.recipe.smithing.TrimPattern;
 import org.spongepowered.api.map.color.MapColorType;
 import org.spongepowered.api.map.color.MapShade;
 import org.spongepowered.api.map.decoration.MapDecorationType;
@@ -277,6 +279,10 @@ public final class RegistryTypes {
     public static final DefaultedRegistryType<StructureType> STRUCTURE_TYPE = RegistryTypes.minecraftKeyInGame("worldgen/structure_type");
 
     public static final DefaultedRegistryType<Trigger<? extends @NonNull Object>> TRIGGER = RegistryTypes.minecraftKeyInGame("trigger_type");
+
+    public static final DefaultedRegistryType<TrimMaterial> TRIM_MATERIAL = RegistryTypes.minecraftKeyInServer("trim_material");
+
+    public static final DefaultedRegistryType<TrimPattern> TRIM_PATTERN = RegistryTypes.minecraftKeyInServer("trim_pattern");
 
     public static final DefaultedRegistryType<VillagerType> VILLAGER_TYPE = RegistryTypes.minecraftKeyInGame("villager_type");
 
