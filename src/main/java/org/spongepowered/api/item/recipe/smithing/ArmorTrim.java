@@ -34,6 +34,17 @@ public interface ArmorTrim {
         return Sponge.game().factoryProvider().provide(Factory.class).create(material, pattern);
     }
 
+    static ArmorTrim of(Supplier<? extends TrimMaterial> material, Supplier<? extends TrimPattern> pattern) {
+        return Sponge.game().factoryProvider().provide(Factory.class).create(material, pattern);
+    }
+    static ArmorTrim of(TrimMaterial material, Supplier<? extends TrimPattern> pattern) {
+        return Sponge.game().factoryProvider().provide(Factory.class).create(material, pattern);
+    }
+
+    static ArmorTrim of(Supplier<? extends TrimMaterial> material, TrimPattern pattern) {
+        return Sponge.game().factoryProvider().provide(Factory.class).create(material, pattern);
+    }
+
     TrimMaterial material();
 
     TrimPattern pattern();
