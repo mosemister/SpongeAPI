@@ -33,6 +33,10 @@ public final class BooleanStateProperties {
     private BooleanStateProperties() {
     }
 
+    public static BooleanStateProperty property_ACTIVE() {
+        return BooleanStateProperty.of("ACTIVE");
+    }
+
     public static BooleanStateProperty property_ATTACHED() {
         return BooleanStateProperty.of("ATTACHED");
     }
@@ -155,6 +159,10 @@ public final class BooleanStateProperties {
 
     public static BooleanStateProperty property_LOCKED() {
         return BooleanStateProperty.of("LOCKED");
+    }
+
+    public static BooleanStateProperty property_NATURAL() {
+        return BooleanStateProperty.of("NATURAL");
     }
 
     public static BooleanStateProperty property_NORTH() {

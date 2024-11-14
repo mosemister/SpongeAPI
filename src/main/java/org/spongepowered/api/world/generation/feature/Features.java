@@ -142,6 +142,8 @@ public final class Features {
 
     public static final DefaultedRegistryReference<Feature> FLOWER_MEADOW = Features.key(ResourceKey.minecraft("flower_meadow"));
 
+    public static final DefaultedRegistryReference<Feature> FLOWER_PALE_GARDEN = Features.key(ResourceKey.minecraft("flower_pale_garden"));
+
     public static final DefaultedRegistryReference<Feature> FLOWER_PLAIN = Features.key(ResourceKey.minecraft("flower_plain"));
 
     public static final DefaultedRegistryReference<Feature> FLOWER_SWAMP = Features.key(ResourceKey.minecraft("flower_swamp"));
@@ -288,13 +290,19 @@ public final class Features {
 
     public static final DefaultedRegistryReference<Feature> ORE_TUFF = Features.key(ResourceKey.minecraft("ore_tuff"));
 
+    public static final DefaultedRegistryReference<Feature> PALE_FOREST_FLOWERS = Features.key(ResourceKey.minecraft("pale_forest_flowers"));
+
     public static final DefaultedRegistryReference<Feature> PALE_GARDEN_VEGETATION = Features.key(ResourceKey.minecraft("pale_garden_vegetation"));
+
+    public static final DefaultedRegistryReference<Feature> PALE_MOSS_PATCH = Features.key(ResourceKey.minecraft("pale_moss_patch"));
 
     public static final DefaultedRegistryReference<Feature> PALE_MOSS_PATCH_BONEMEAL = Features.key(ResourceKey.minecraft("pale_moss_patch_bonemeal"));
 
     public static final DefaultedRegistryReference<Feature> PALE_MOSS_VEGETATION = Features.key(ResourceKey.minecraft("pale_moss_vegetation"));
 
     public static final DefaultedRegistryReference<Feature> PALE_OAK = Features.key(ResourceKey.minecraft("pale_oak"));
+
+    public static final DefaultedRegistryReference<Feature> PALE_OAK_BONEMEAL = Features.key(ResourceKey.minecraft("pale_oak_bonemeal"));
 
     public static final DefaultedRegistryReference<Feature> PALE_OAK_CREAKING = Features.key(ResourceKey.minecraft("pale_oak_creaking"));
 

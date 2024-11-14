@@ -188,6 +188,8 @@ public final class ParticleTypes {
 
     public static final DefaultedRegistryReference<ParticleType> OMINOUS_SPAWNING = ParticleTypes.key(ResourceKey.minecraft("ominous_spawning"));
 
+    public static final DefaultedRegistryReference<ParticleType> PALE_OAK_LEAVES = ParticleTypes.key(ResourceKey.minecraft("pale_oak_leaves"));
+
     public static final DefaultedRegistryReference<ParticleType> POOF = ParticleTypes.key(ResourceKey.minecraft("poof"));
 
     public static final DefaultedRegistryReference<ParticleType> PORTAL = ParticleTypes.key(ResourceKey.minecraft("portal"));

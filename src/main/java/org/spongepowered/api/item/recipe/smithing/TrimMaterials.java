@@ -57,6 +57,8 @@ public final class TrimMaterials {
 
     public static final DefaultedRegistryReference<TrimMaterial> REDSTONE = TrimMaterials.key(ResourceKey.minecraft("redstone"));
 
+    public static final DefaultedRegistryReference<TrimMaterial> RESIN = TrimMaterials.key(ResourceKey.minecraft("resin"));
+
     private TrimMaterials() {
     }
 

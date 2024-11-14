@@ -226,8 +226,6 @@ public final class EntityTypes {
 
     public static final DefaultedRegistryReference<EntityType<Creaking>> CREAKING = EntityTypes.key(ResourceKey.minecraft("creaking"));
 
-    public static final DefaultedRegistryReference<EntityType<Creaking>> CREAKING_TRANSIENT = EntityTypes.key(ResourceKey.minecraft("creaking_transient"));
-
     public static final DefaultedRegistryReference<EntityType<Creeper>> CREEPER = EntityTypes.key(ResourceKey.minecraft("creeper"));
 
     public static final DefaultedRegistryReference<EntityType<Boat>> DARK_OAK_BOAT = EntityTypes.key(ResourceKey.minecraft("dark_oak_boat"));

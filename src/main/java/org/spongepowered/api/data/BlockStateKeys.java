@@ -30,7 +30,6 @@ import org.spongepowered.api.data.type.BambooLeavesType;
 import org.spongepowered.api.data.type.BellAttachmentType;
 import org.spongepowered.api.data.type.ChestAttachmentType;
 import org.spongepowered.api.data.type.ComparatorMode;
-import org.spongepowered.api.data.type.CreakingHeart;
 import org.spongepowered.api.data.type.DoorHinge;
 import org.spongepowered.api.data.type.DripstoneSegment;
 import org.spongepowered.api.data.type.InstrumentType;
@@ -56,6 +55,8 @@ import org.spongepowered.api.util.Direction;
  */
 @SuppressWarnings("unused")
 public final class BlockStateKeys {
+
+    public static final Key<Value<Boolean>> ACTIVE = BlockStateKeys.key(ResourceKey.minecraft("property/active"), Boolean.class);
 
     public static final Key<Value<Integer>> AGE_1 = BlockStateKeys.key(ResourceKey.minecraft("property/age"), Integer.class);
 
@@ -116,8 +117,6 @@ public final class BlockStateKeys {
     public static final Key<Value<Boolean>> CRACKED = BlockStateKeys.key(ResourceKey.minecraft("property/cracked"), Boolean.class);
 
     public static final Key<Value<Boolean>> CRAFTING = BlockStateKeys.key(ResourceKey.minecraft("property/crafting"), Boolean.class);
-
-    public static final Key<Value<CreakingHeart>> CREAKING = BlockStateKeys.key(ResourceKey.minecraft("property/creaking"), CreakingHeart.class);
 
     public static final Key<Value<Integer>> DELAY = BlockStateKeys.key(ResourceKey.minecraft("property/delay"), Integer.class);
 
@@ -202,6 +201,8 @@ public final class BlockStateKeys {
     public static final Key<Value<ComparatorMode>> MODE_COMPARATOR = BlockStateKeys.key(ResourceKey.minecraft("property/mode"), ComparatorMode.class);
 
     public static final Key<Value<Integer>> MOISTURE = BlockStateKeys.key(ResourceKey.minecraft("property/moisture"), Integer.class);
+
+    public static final Key<Value<Boolean>> NATURAL = BlockStateKeys.key(ResourceKey.minecraft("property/natural"), Boolean.class);
 
     public static final Key<Value<Boolean>> NORTH = BlockStateKeys.key(ResourceKey.minecraft("property/north"), Boolean.class);
 

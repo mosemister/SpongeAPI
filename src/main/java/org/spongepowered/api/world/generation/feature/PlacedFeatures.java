@@ -136,6 +136,8 @@ public final class PlacedFeatures {
 
     public static final DefaultedRegistryReference<PlacedFeature> FLOWER_MEADOW = PlacedFeatures.key(ResourceKey.minecraft("flower_meadow"));
 
+    public static final DefaultedRegistryReference<PlacedFeature> FLOWER_PALE_GARDEN = PlacedFeatures.key(ResourceKey.minecraft("flower_pale_garden"));
+
     public static final DefaultedRegistryReference<PlacedFeature> FLOWER_PLAIN = PlacedFeatures.key(ResourceKey.minecraft("flower_plain"));
 
     public static final DefaultedRegistryReference<PlacedFeature> FLOWER_PLAINS = PlacedFeatures.key(ResourceKey.minecraft("flower_plains"));
@@ -296,7 +298,11 @@ public final class PlacedFeatures {
 
     public static final DefaultedRegistryReference<PlacedFeature> ORE_TUFF = PlacedFeatures.key(ResourceKey.minecraft("ore_tuff"));
 
+    public static final DefaultedRegistryReference<PlacedFeature> PALE_GARDEN_FLOWERS = PlacedFeatures.key(ResourceKey.minecraft("pale_garden_flowers"));
+
     public static final DefaultedRegistryReference<PlacedFeature> PALE_GARDEN_VEGETATION = PlacedFeatures.key(ResourceKey.minecraft("pale_garden_vegetation"));
+
+    public static final DefaultedRegistryReference<PlacedFeature> PALE_MOSS_PATCH = PlacedFeatures.key(ResourceKey.minecraft("pale_moss_patch"));
 
     public static final DefaultedRegistryReference<PlacedFeature> PALE_OAK_CHECKED = PlacedFeatures.key(ResourceKey.minecraft("pale_oak_checked"));
 

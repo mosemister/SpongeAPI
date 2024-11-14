@@ -77,6 +77,8 @@ public final class BlockTypeTags {
 
     public static final Tag<BlockType> BEDS = BlockTypeTags.key(ResourceKey.minecraft("beds"));
 
+    public static final Tag<BlockType> BEE_ATTRACTIVE = BlockTypeTags.key(ResourceKey.minecraft("bee_attractive"));
+
     public static final Tag<BlockType> BEE_GROWABLES = BlockTypeTags.key(ResourceKey.minecraft("bee_growables"));
 
     public static final Tag<BlockType> BEEHIVES = BlockTypeTags.key(ResourceKey.minecraft("beehives"));
@@ -275,6 +277,8 @@ public final class BlockTypeTags {
 
     public static final Tag<BlockType> OVERWORLD_NATURAL_LOGS = BlockTypeTags.key(ResourceKey.minecraft("overworld_natural_logs"));
 
+    public static final Tag<BlockType> PALE_OAK_LOGS = BlockTypeTags.key(ResourceKey.minecraft("pale_oak_logs"));
+
     public static final Tag<BlockType> PARROTS_SPAWNABLE_ON = BlockTypeTags.key(ResourceKey.minecraft("parrots_spawnable_on"));
 
     public static final Tag<BlockType> PIGLIN_REPELLENTS = BlockTypeTags.key(ResourceKey.minecraft("piglin_repellents"));
@@ -352,8 +356,6 @@ public final class BlockTypeTags {
     public static final Tag<BlockType> STRIDER_WARM_BLOCKS = BlockTypeTags.key(ResourceKey.minecraft("strider_warm_blocks"));
 
     public static final Tag<BlockType> SWORD_EFFICIENT = BlockTypeTags.key(ResourceKey.minecraft("sword_efficient"));
-
-    public static final Tag<BlockType> TALL_FLOWERS = BlockTypeTags.key(ResourceKey.minecraft("tall_flowers"));
 
     public static final Tag<BlockType> TERRACOTTA = BlockTypeTags.key(ResourceKey.minecraft("terracotta"));
 
