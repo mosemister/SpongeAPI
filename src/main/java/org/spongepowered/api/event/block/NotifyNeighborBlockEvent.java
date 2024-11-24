@@ -41,7 +41,7 @@ public interface NotifyNeighborBlockEvent extends Event, Cancellable {
 
     default void filterTargetPositions(final Predicate<Vector3i> predicate) {
         this.tickets().forEach(ticket -> {
-            if (predicate.test(ticket.targetPosition())) {
+            if (!predicate.test(ticket.targetPosition())) {
                 ticket.setValid(false);
             }
         });
@@ -49,7 +49,7 @@ public interface NotifyNeighborBlockEvent extends Event, Cancellable {
 
     default void filterTickets(final Predicate<NotificationTicket> predicate) {
         this.tickets().forEach(ticket -> {
-            if (predicate.test(ticket)) {
+            if (!predicate.test(ticket)) {
                 ticket.setValid(false);
             }
         });
