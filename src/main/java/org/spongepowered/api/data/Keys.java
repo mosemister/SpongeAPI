@@ -573,6 +573,24 @@ public final class Keys {
     public static final Key<Value<BossBar>> BOSS_BAR = Keys.key(ResourceKey.sponge("boss_bar"), BossBar.class);
 
     /**
+     * The width of the interactable form of an {@link Entity}.
+     *
+     * <p>Together with {@link #BOUNDING_BOX_HEIGHT} this defines
+     * the size of the {@link Entity}'s bounding box.</p>
+     * Readonly(Entity.class) expect Interaction
+     */
+    public static final Key<Value<Double>> BOUNDING_BOX_BASE_SIZE = Keys.key(ResourceKey.sponge("bounding_box_base_size"), Double.class);
+
+    /**
+     * The height of the interactable form of an {@link Entity}.
+     *
+     * <p>Together with {@link #BOUNDING_BOX_BASE_SIZE} this defines
+     * the size of the {@link Entity}'s bounding box.</p>
+     * Readonly(Entity.class) expect Interaction
+     */
+    public static final Key<Value<Double>> BOUNDING_BOX_HEIGHT = Keys.key(ResourceKey.sponge("bounding_box_height"), Double.class);
+
+    /**
      * The {@link BlockType}s able to be broken by an {@link ItemStack}.
      */
     public static final Key<SetValue<BlockType>> BREAKABLE_BLOCK_TYPES = Keys.setKey(ResourceKey.sponge("breakable_block_types"), BlockType.class);

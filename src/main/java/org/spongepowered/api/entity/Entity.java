@@ -655,4 +655,22 @@ public interface Entity extends Identifiable, HoverEventSource<HoverEvent.ShowEn
 
     @Override
     HoverEvent<HoverEvent.ShowEntity> asHoverEvent(final UnaryOperator<HoverEvent.ShowEntity> op);
+
+    /**
+     * {@link Keys#BOUNDING_BOX_BASE_SIZE}
+     *
+     * @return The bounding box base size of the entity
+     */
+    default Value.Mutable<Double> boundingBoxBaseSize() {
+        return this.requireValue(Keys.BOUNDING_BOX_BASE_SIZE).asMutable();
+    }
+
+    /**
+     * {@link Keys#BOUNDING_BOX_HEIGHT}
+     *
+     * @return The bounding box height of the entity
+     */
+    default Value.Mutable<Double> boundingBoxHeight() {
+        return this.requireValue(Keys.BOUNDING_BOX_HEIGHT).asMutable();
+    }
 }
