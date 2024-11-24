@@ -28,24 +28,60 @@ import org.spongepowered.api.block.BlockSnapshot;
 import org.spongepowered.api.world.LocatableBlock;
 import org.spongepowered.math.vector.Vector3i;
 
+/**
+ * Represents a notification that is being proposed to the engine.
+ */
 public interface NotificationTicket {
 
+    /**
+     * Gets the notifier block that scheduled this notification.
+     *
+     * @return The notifier block
+     */
     LocatableBlock notifier();
 
+    /**
+     * Gets the notifier position that scheduled this notification.
+     *
+     * @return The notifier position
+     */
     default Vector3i notifierPosition() {
         return this.notifier().blockPosition();
     }
 
+    /**
+     * Gets the target block of this notification.
+     *
+     * @return The target block
+     */
     BlockSnapshot target();
 
+    /**
+     * Gets the target position of this notification.
+     *
+     * @return The target position
+     */
     default Vector3i targetPosition() {
         return this.target().position();
     }
 
+    /**
+     * Gets whether this ticket is marked as valid.
+     *
+     * @return The valid state of this ticket
+     */
     boolean valid();
 
+    /**
+     * Sets whether this ticket is valid or not.
+     *
+     * @param valid The valid state of this ticket
+     */
     void setValid(boolean valid);
 
+    /**
+     * Invalidates this ticket.
+     */
     default void invalidate() {
         this.setValid(false);
     }
