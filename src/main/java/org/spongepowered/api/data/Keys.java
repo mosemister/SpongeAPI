@@ -284,6 +284,7 @@ import org.spongepowered.api.world.storage.WorldProperties;
 import org.spongepowered.api.world.weather.Weather;
 import org.spongepowered.api.world.weather.WeatherType;
 import org.spongepowered.api.world.weather.WeatherTypes;
+import org.spongepowered.math.matrix.Matrix4d;
 import org.spongepowered.math.vector.Vector2i;
 import org.spongepowered.math.vector.Vector3d;
 import org.spongepowered.math.vector.Vector3i;
@@ -2286,6 +2287,11 @@ public final class Keys {
      * {@link MapInfo}
      */
     public static final Key<Value<ResourceKey>> MAP_WORLD = Keys.key(ResourceKey.sponge("map_world"), ResourceKey.class);
+
+    /**
+     * The {@link Matrix4d} of a {@link DisplayEntity}
+     */
+    public static final Key<Value<Matrix4d>> MATRIX = Keys.key(ResourceKey.sponge("matrix"), Matrix4d.class);
 
     /**
      * The matter state of a {@link BlockState}
