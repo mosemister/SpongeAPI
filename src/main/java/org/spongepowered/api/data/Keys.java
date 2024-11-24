@@ -289,6 +289,7 @@ import org.spongepowered.api.world.storage.WorldProperties;
 import org.spongepowered.api.world.weather.Weather;
 import org.spongepowered.api.world.weather.WeatherType;
 import org.spongepowered.api.world.weather.WeatherTypes;
+import org.spongepowered.math.matrix.Matrix4d;
 import org.spongepowered.math.vector.Vector2i;
 import org.spongepowered.math.vector.Vector3d;
 import org.spongepowered.math.vector.Vector3i;
@@ -575,6 +576,24 @@ public final class Keys {
      * TODO Readonly but mutable?
      */
     public static final Key<Value<BossBar>> BOSS_BAR = Keys.key(ResourceKey.sponge("boss_bar"), BossBar.class);
+
+    /**
+     * The width of the interactable form of an {@link Entity}.
+     *
+     * <p>Together with {@link #BOUNDING_BOX_HEIGHT} this defines
+     * the size of the {@link Entity}'s bounding box.</p>
+     * Readonly(Entity.class) expect Interaction
+     */
+    public static final Key<Value<Double>> BOUNDING_BOX_BASE_SIZE = Keys.key(ResourceKey.sponge("bounding_box_base_size"), Double.class);
+
+    /**
+     * The height of the interactable form of an {@link Entity}.
+     *
+     * <p>Together with {@link #BOUNDING_BOX_BASE_SIZE} this defines
+     * the size of the {@link Entity}'s bounding box.</p>
+     * Readonly(Entity.class) expect Interaction
+     */
+    public static final Key<Value<Double>> BOUNDING_BOX_HEIGHT = Keys.key(ResourceKey.sponge("bounding_box_height"), Double.class);
 
     /**
      * The {@link BlockType}s able to be broken by an {@link ItemStack}.
@@ -2322,6 +2341,11 @@ public final class Keys {
      * {@link MapInfo}
      */
     public static final Key<Value<ResourceKey>> MAP_WORLD = Keys.key(ResourceKey.sponge("map_world"), ResourceKey.class);
+
+    /**
+     * The {@link Matrix4d} of a {@link DisplayEntity}
+     */
+    public static final Key<Value<Matrix4d>> MATRIX = Keys.key(ResourceKey.sponge("matrix"), Matrix4d.class);
 
     /**
      * The matter state of a {@link BlockState}

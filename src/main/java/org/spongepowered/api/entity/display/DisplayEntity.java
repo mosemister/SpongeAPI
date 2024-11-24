@@ -28,6 +28,7 @@ import org.spongepowered.api.data.Keys;
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.util.Ticks;
 import org.spongepowered.api.util.Transform;
+import org.spongepowered.math.matrix.Matrix4d;
 
 import java.util.Optional;
 
@@ -123,6 +124,15 @@ public interface DisplayEntity extends Entity {
      */
     default Double viewRange() {
         return this.require(Keys.VIEW_RANGE);
+    }
+
+    /**
+     * Returns the matrix.
+     *
+     * @return the matrix.
+     */
+    default Matrix4d matrix() {
+        return this.require(Keys.MATRIX);
     }
 
     // TODO bounding box (maybe BASE_SIZE if this is not smth. else in the entity)
