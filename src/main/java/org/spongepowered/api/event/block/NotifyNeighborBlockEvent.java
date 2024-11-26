@@ -33,23 +33,50 @@ import java.util.List;
 import java.util.function.Predicate;
 
 /**
- *
+ * Fired when a neighbour notification is being proposed to the engine.
  */
 public interface NotifyNeighborBlockEvent extends Event, Cancellable {
 
+    /**
+     * Gets a list of the {@link NotificationTicket}s for this event.
+     * If a ticket is requested to be marked as "invalid",
+     * {@link NotificationTicket#setValid(boolean)} can be used.
+     *
+     * @return The unmodifiable list of tickets
+     */
     List<NotificationTicket> tickets();
 
+    /**
+     * Applies the provided {@link Predicate} to the {@link List} of
+     * {@link NotificationTicket}s from {@link #tickets()} such that
+     * any time that {@link Predicate#test(Object)} returns {@code false}
+     * on the location of the {@link NotificationTicket}, the
+     * {@link NotificationTicket} is marked as "invalid".
+     *
+     * <p>{@link NotificationTicket#targetPosition()} is used to get the {@link Vector3i}</p>
+     *
+     * @param predicate The predicate to use for filtering
+     */
     default void filterTargetPositions(final Predicate<Vector3i> predicate) {
         this.tickets().forEach(ticket -> {
-            if (predicate.test(ticket.targetPosition())) {
+            if (!predicate.test(ticket.targetPosition())) {
                 ticket.setValid(false);
             }
         });
     }
 
+    /**
+     * Applies the provided {@link Predicate} to the {@link List} of
+     * {@link NotificationTicket}s from {@link #tickets()} such that
+     * any time that {@link Predicate#test(Object)} returns {@code false}
+     * on the location of the {@link NotificationTicket}, the
+     * {@link NotificationTicket} is marked as "invalid".
+     *
+     * @param predicate The predicate to use for filtering
+     */
     default void filterTickets(final Predicate<NotificationTicket> predicate) {
         this.tickets().forEach(ticket -> {
-            if (predicate.test(ticket)) {
+            if (!predicate.test(ticket)) {
                 ticket.setValid(false);
             }
         });

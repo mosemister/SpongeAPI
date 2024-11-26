@@ -51,7 +51,11 @@ public interface EventManager {
      * @param plugin The plugin container
      * @param obj The object
      * @return This manager, for fluency
+     * @deprecated In order to be compatible with the JPMS, it is highly
+     * recommended that plugins instead use the
+     * {@link #registerListeners(PluginContainer, Object, MethodHandles.Lookup)} overload.
      */
+    @Deprecated(since = "13")
     EventManager registerListeners(PluginContainer plugin, Object obj);
 
     /**
