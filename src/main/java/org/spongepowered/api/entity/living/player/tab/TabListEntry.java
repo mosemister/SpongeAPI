@@ -168,6 +168,25 @@ public interface TabListEntry {
     TabListEntry setListed(boolean listed);
 
     /**
+     * Gets the weight of this entry.
+     * Entries are first sorted by their weight in
+     * descending order.
+     *
+     * @return The weight of this entry
+     */
+    int weight();
+
+    /**
+     * Sets the weight of this entry.
+     * Entries are first sorted by their weight in
+     * descending order.
+     *
+     * @param weight The new weight
+     * @return This entry, for chaining
+     */
+    TabListEntry setWeight(int weight);
+
+    /**
      * Represents a builder class to create mutable {@link TabListEntry}s.
      *
      * @see TabListEntry
@@ -229,6 +248,15 @@ public interface TabListEntry {
          * @see TabListEntry#setListed(boolean)
          */
         Builder listed(boolean listed);
+
+        /**
+         * Sets the weight for entries created by this builder.
+         *
+         * @param weight The weight
+         * @return The builder
+         * @see TabListEntry#setWeight(int)
+         */
+        Builder weight(int weight);
 
         /**
          * Builds an entry based off the values of this builder.
